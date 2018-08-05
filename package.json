@@ -1,0 +1,31 @@
+{
+  "name": "mood",
+  "version": "1.0.0",
+  "description": "Real time polling for music being played",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pskanade/mood.git"
+  },
+  "author": "Pranav Kanade (@pskanade)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pskanade/mood/issues"
+  },
+  "homepage": "https://github.com/pskanade/mood#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.6",
+    "pusher": "^2.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
