@@ -5,8 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PusherPoll</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 </head>
 <body>
-    <h1>Music Voting Site</h1>
+    <div class="container">
+        <h1>Music Voting Site</h1>
+        <p>Vote for your favorite Music to listen to it</p>
+        <form id="vote-form">
+            <p>
+                <label>
+                    <input type="radio" name="music" id="mRock" value="ROCK"/>
+                    <span>ROCK</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="music" id="mClassical" value="CLASSICAL" checked/>
+                    <span>CLASSICAL</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="music" id="mJazz" value="JAZZ" checked/>
+                    <span>JAZZ</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="radio" name="music" id="mBollywood" value="BOLLYWOOD" checked/>
+                    <span>BOLLYWOOD</span>
+                </label>
+            </p>
+            <input type="submit" value="Vote" class="btn"/>
+        </form>
+        <br><br>
+
+        <div id="chartContainer" style="height: 300px;width:100%"></div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.2.2/pusher.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
